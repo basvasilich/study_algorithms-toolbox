@@ -14,8 +14,9 @@ def fibonacci_number_again_naive(n, m):
     return current
 
 
-def pisanoPeriod(m):
+def pisan_period(m):
     previous, current = 0, 1
+
     for i in range(0, m * m):
         previous, current = current, (previous + current) % m
 
@@ -26,19 +27,15 @@ def pisanoPeriod(m):
 def fibonacci_number_again(n, m):
     assert 0 <= n <= 10 ** 18 and 2 <= m <= 10 ** 3
 
-    # Getting the period
-    print(f"{n} {m}")
-
-    pisano_period = pisanoPeriod(m)
-
-    # Taking mod of N with
-    # period length
-    n = n % pisano_period
+    n = n % pisan_period(m)
 
     previous, current = 0, 1
 
+    if n == 0:
+        return previous
+
     for i in range(n - 1):
-        previous, current = current, previous + current
+        previous, current = current, (previous + current)
 
     return current % m
 

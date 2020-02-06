@@ -17,9 +17,8 @@ def lcm(a, b):
     m = a * b
 
     while b != 0:
-        t = b
-        b = a % b
-        a = t
+        a, b = b, a % b
+
     return m / a
 
 

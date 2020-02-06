@@ -3,8 +3,8 @@ files:
 - name: last_digit_of_fibonacci_number.py
   visible: true
   placeholders:
-  - offset: 303
-    length: 136
+  - offset: 299
+    length: 179
     placeholder_text: type here
     initial_state:
       length: 9

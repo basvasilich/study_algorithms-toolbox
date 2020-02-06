@@ -13,18 +13,15 @@ def fibonacci_number_naive(n):
 def fibonacci_number(n):
     assert 0 <= n <= 45
 
-    f = [0, 1]
+    previous, current = 0, 1
 
-    if n < 2:
-        return f[n]
+    if n == 0:
+        return previous
 
-    for i in range(2, n + 1):
-        f.append(f[i-1] + f[i-2])
+    for i in range(n - 1):
+        previous, current = current, (previous + current)
 
-    return f[n]
-
-
-
+    return current
 
 
 if __name__ == '__main__':

@@ -1,4 +1,5 @@
 # python3
+import math
 
 
 def last_digit_of_the_sum_of_fibonacci_numbers_again_naive(from_index, to_index):
@@ -16,10 +17,15 @@ def last_digit_of_the_sum_of_fibonacci_numbers_again_naive(from_index, to_index)
     return sum(fibonacci_numbers[from_index:to_index + 1]) % 10
 
 
+def fib(n):
+    phi = (1 + math.sqrt(5)) / 2
+    return int(round(pow(phi, n) / math.sqrt(5)))
+
+
 def last_digit_of_the_sum_of_fibonacci_numbers_again(from_index, to_index):
     assert 0 <= from_index <= to_index <= 10 ** 18
 
-    type here
+    return (fib(to_index + 2) - fib(from_index + 1)) % 10
 
 
 if __name__ == '__main__':

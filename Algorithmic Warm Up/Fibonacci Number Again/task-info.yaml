@@ -3,8 +3,8 @@ files:
 - name: fibonacci_number_again.py
   visible: true
   placeholders:
-  - offset: 581
-    length: 292
+  - offset: 777
+    length: 9
     placeholder_text: type here
     initial_state:
       length: 9
@@ -43,7 +43,7 @@ files:
   visible: true
   placeholders:
   - offset: 456
-    length: 22
+    length: 9
     placeholder_text: type here
     initial_state:
       length: 9

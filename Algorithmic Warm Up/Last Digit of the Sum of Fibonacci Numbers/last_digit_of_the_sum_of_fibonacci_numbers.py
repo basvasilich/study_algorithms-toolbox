@@ -1,5 +1,5 @@
 # python3
-
+import math
 
 def last_digit_of_the_sum_of_fibonacci_numbers_naive(n):
     assert 0 <= n <= 10 ** 18
@@ -16,10 +16,17 @@ def last_digit_of_the_sum_of_fibonacci_numbers_naive(n):
     return sum(fibonacci_numbers) % 10
 
 
+def fib(n):
+    return int(round(((1+math.sqrt(5))**n-(1-math.sqrt(5))**n)/(2**n*math.sqrt(5))))
+
+
 def last_digit_of_the_sum_of_fibonacci_numbers(n):
     assert 0 <= n <= 10 ** 18
 
-    type here
+    f = fib(n + 2)
+    sum = f - 1
+
+    return sum % 10
 
 
 if __name__ == '__main__':

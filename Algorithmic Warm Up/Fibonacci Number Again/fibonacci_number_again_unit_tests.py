@@ -5,7 +5,7 @@ from fibonacci_number_again import fibonacci_number_again, fibonacci_number_agai
 
 class TestFibonacciNumberAgain(unittest.TestCase):
     def test_small(self):
-        for n, m in product(range(3, 15), repeat=2):
+        for n, m in product(range(2, 15), repeat=2):
             self.assertEqual(fibonacci_number_again(n, m), fibonacci_number_again_naive(n, m))
 
     def test_large(self):
