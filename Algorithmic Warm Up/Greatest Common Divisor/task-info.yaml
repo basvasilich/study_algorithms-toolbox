@@ -3,14 +3,14 @@ files:
 - name: gcd.py
   visible: true
   placeholders:
-  - offset: 313
-    length: 9
+  - offset: 309
+    length: 77
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 313
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -40,22 +40,22 @@ files:
   visible: true
   placeholders:
   - offset: 148
-    length: 9
+    length: 16
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 148
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
-  - offset: 298
-    length: 9
+  - offset: 304
+    length: 11
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 298
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     import unittest

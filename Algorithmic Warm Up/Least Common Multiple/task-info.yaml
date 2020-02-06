@@ -3,14 +3,14 @@ files:
 - name: lcm.py
   visible: true
   placeholders:
-  - offset: 292
-    length: 9
+  - offset: 288
+    length: 95
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 292
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -40,7 +40,7 @@ files:
   visible: true
   placeholders:
   - offset: 337
-    length: 9
+    length: 31
     placeholder_text: type here
     initial_state:
       length: 9
