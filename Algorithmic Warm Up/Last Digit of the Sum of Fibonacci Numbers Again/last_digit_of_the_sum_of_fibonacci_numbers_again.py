@@ -18,8 +18,17 @@ def last_digit_of_the_sum_of_fibonacci_numbers_again_naive(from_index, to_index)
 
 
 def fib(n):
-    phi = (1 + math.sqrt(5)) / 2
-    return int(round(pow(phi, n) / math.sqrt(5)))
+
+    if n == 0:
+        return 0
+
+    v1, v2, v3 = 1, 1, 0
+    for rec in bin(n)[3:]:
+        calc = v2 * v2
+        v1, v2, v3 = v1 * v1 + calc, (v1 + v3) * v2, calc + v3 * v3
+        if rec == '1':
+            v1, v2, v3 = v1 + v2, v1, v2
+    return v2
 
 
 def last_digit_of_the_sum_of_fibonacci_numbers_again(from_index, to_index):

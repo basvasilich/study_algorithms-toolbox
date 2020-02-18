@@ -3,7 +3,16 @@
 
 def money_change(money):
     assert 0 <= money <= 10 ** 3
-    type here
+
+    result = 0
+    coins = [10, 5, 1]
+
+    for coin in coins:
+        c = money // coin
+        result += c
+        money -= c * coin
+
+    return result
 
 
 if __name__ == '__main__':

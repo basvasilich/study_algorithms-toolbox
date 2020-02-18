@@ -6,14 +6,14 @@ files:
 - name: maximum_loot.py
   visible: true
   placeholders:
-  - offset: 318
-    length: 9
+  - offset: 314
+    length: 457
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 318
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -43,7 +43,7 @@ files:
   visible: true
   placeholders:
   - offset: 282
-    length: 9
+    length: 24
     placeholder_text: type here
     initial_state:
       length: 9

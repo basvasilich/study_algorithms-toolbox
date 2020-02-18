@@ -3,7 +3,7 @@ files:
 - name: last_digit_of_the_sum_of_fibonacci_numbers.py
   visible: true
   placeholders:
-  - offset: 612
+  - offset: 809
     length: 20
     placeholder_text: type here
     initial_state:

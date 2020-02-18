@@ -16,7 +16,7 @@ def gcd(a, b):
 
     while b != 0:
         a, b = b, a % b
-    return a
+    return int(a)
 
 
 if __name__ == '__main__':

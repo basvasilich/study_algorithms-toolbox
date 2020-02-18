@@ -14,12 +14,15 @@ def lcm_naive(a, b):
 def lcm(a, b):
     assert 1 <= a <= 2 * 10 ** 9 and 1 <= b <= 2 * 10 ** 9
 
+    if a == 0 or b == 0:
+        return 0
+
     m = a * b
 
     while b != 0:
         a, b = b, a % b
 
-    return m / a
+    return int(m / a)
 
 
 if __name__ == '__main__':
