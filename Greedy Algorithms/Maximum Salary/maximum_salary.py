@@ -15,7 +15,9 @@ def largest_number_naive(numbers):
 
 
 def largest_number(numbers):
-    type here
+    numbers.sort(reverse=True)
+    numbers = list(map(lambda x: str(x), numbers))
+    return int("".join(numbers))
 
 
 if __name__ == '__main__':
