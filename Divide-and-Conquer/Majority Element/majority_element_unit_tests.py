@@ -5,11 +5,12 @@ from majority_element import majority_element, majority_element_naive
 class TestMajorityElement(unittest.TestCase):
     def test_small(self):
         for elements in [
-            [7, 2, 7],
+            [7, 2, 3],
             [7, 8, 9],
             [2, 3, 2, 3],
             [1, 2, 3, 4],
-            type here
+            [1, 2, 3, 4, 4, 4, 5],
+            [1, 2, 3, 6, 7, 8, 5]
         ]:
             self.assertEqual(
                 majority_element(list(elements)),

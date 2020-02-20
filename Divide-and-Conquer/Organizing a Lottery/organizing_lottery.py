@@ -16,7 +16,36 @@ def points_cover_naive(starts, ends, points):
 
 
 def points_cover(starts, ends, points):
-    type here
+    count = [None] * len(points)
+    events = []
+    rs = {}
+
+    for i in range(len(starts)):
+        events.append([starts[i], i, 'l'])
+        events.append([ends[i], i, 'r'])
+        rs[ends[i]] = rs[ends[i]] + 1 if ends[i] in rs.keys() else 1
+
+    for i in range(len(points)):
+        events.append([points[i], i, 'p'])
+
+    events = sorted(events, key=lambda item: item[0])
+    segments = 0
+    for i, e in enumerate(events):
+        value, index, event_type = e
+
+        if event_type == 'l':
+            segments += 1
+        elif event_type == 'r':
+            segments -= 1
+        elif event_type == 'p':
+            count[index] = segments
+
+            if value in rs.keys():
+                count[index] += rs[value]
+        else:
+            assert False
+
+    return count
 
 
 if __name__ == '__main__':
