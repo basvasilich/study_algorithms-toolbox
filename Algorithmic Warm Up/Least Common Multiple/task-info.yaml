@@ -3,8 +3,8 @@ files:
 - name: lcm.py
   visible: true
   placeholders:
-  - offset: 331
-    length: 79
+  - offset: 288
+    length: 122
     placeholder_text: type here
     initial_state:
       length: 9

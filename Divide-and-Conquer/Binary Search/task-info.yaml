@@ -4,16 +4,16 @@ files:
   visible: true
   placeholders:
   - offset: 241
-    length: 9
+    length: 28
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 241
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
-  - offset: 520
-    length: 9
+  - offset: 539
+    length: 36
     placeholder_text: type here
     initial_state:
       length: 9
@@ -105,14 +105,14 @@ files:
 - name: binary_search.py
   visible: true
   placeholders:
-  - offset: 288
-    length: 9
+  - offset: 319
+    length: 470
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 288
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3

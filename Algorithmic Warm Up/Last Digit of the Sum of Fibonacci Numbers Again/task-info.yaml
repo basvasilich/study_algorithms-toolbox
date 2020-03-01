@@ -3,14 +3,14 @@ files:
 - name: last_digit_of_the_sum_of_fibonacci_numbers_again.py
   visible: true
   placeholders:
-  - offset: 889
-    length: 53
+  - offset: 933
+    length: 9
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 608
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Unchecked
   text: |
     # python3
