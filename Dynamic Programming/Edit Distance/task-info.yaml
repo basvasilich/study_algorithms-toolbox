@@ -3,14 +3,14 @@ files:
 - name: edit_distance.py
   visible: true
   placeholders:
-  - offset: 64
-    length: 9
+  - offset: 229
+    length: 38
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 64
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -27,7 +27,7 @@ files:
   visible: true
   placeholders:
   - offset: 364
-    length: 9
+    length: 25
     placeholder_text: type here
     initial_state:
       length: 9

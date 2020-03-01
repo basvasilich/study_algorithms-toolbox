@@ -14,7 +14,16 @@ def change_naive(money):
 
 
 def change(money):
-    type here
+    coins = [1, 3, 4]
+    amounts = [0] * (money + 1)
+    for i in range(1, money + 1):
+        amounts[i] = float("inf")
+        for coin in coins:
+            if i >= coin:
+                num_coins = amounts[i - coin] + 1
+                if num_coins < amounts[i]:
+                    amounts[i] = num_coins
+    return amounts[money]
 
 
 if __name__ == '__main__':
