@@ -6,14 +6,14 @@ files:
 - name: primitive_calculator_unit_tests.py
   visible: true
   placeholders:
-  - offset: 195
-    length: 7
+  - offset: 186
+    length: 9
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 186
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Unchecked
   text: |
     import unittest
@@ -61,8 +61,8 @@ files:
 - name: primitive_calculator.py
   visible: true
   placeholders:
-  - offset: 68
-    length: 992
+  - offset: 72
+    length: 988
     placeholder_text: type here
     initial_state:
       length: 9
